@@ -3846,6 +3846,34 @@ img.u-pull-left {
     color            : white;
 }
 
+/* === FIX POPUP SCROLL === */
+
+/* allow page overlay to scroll */
+.mfp-wrap {
+    overflow-y: auto;
+}
+
+/* keep content flexible */
+.mfp-content {
+    max-height: 90vh;
+}
+
+/* make popup itself scrollable */
+.modal-popup {
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+/* optional: scrollbar styling */
+.modal-popup::-webkit-scrollbar {
+    width: 6px;
+}
+
+.modal-popup::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
 /* ------------------------------------------------------------------- 
  * ## testimonials
  * ------------------------------------------------------------------- */
